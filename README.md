@@ -105,6 +105,8 @@ Diese öffentliche Fassung enthält keine Zugangsdaten und keine Medien Dritter.
 
 Fertige Firmware und APKs gibt es unter **Releases**.
 
+**Sprachaufnahmen:** Die beiden voreingestellten Ansagesätze (`Sprache/nicht_da_andere_etage.mp3`, `Sprache/nicht_zuhause_auf_dem_handy_erreichbar.mp3`, eingebaut in `firmware/doorstation_v2/DefaultAnnouncements.h`) wurden mit ElevenLabs im bezahlten Starter-Tarif erzeugt, der die kommerzielle Nutzung erlaubt. Wer eigene Sätze verwenden will, ersetzt die Dateien und führt `tools/make_default_announcements.py` aus oder lädt Sätze über die Seite `/ansage` hoch.
+
 ## Projektstatus und Lizenz
 
 Eigenbauprojekt, seit November 2026 an einem Haus mit drei Parteien in Betrieb. Die dokumentierten Tests unterscheiden zwischen bereits bestätigten Funktionen und noch offenen Prüfungen. Private WLAN-Zugangsdaten, PINs, OTA-Passwörter und Geräteabbilder gehören nicht ins Repository.
