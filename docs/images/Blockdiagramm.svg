@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="940" viewBox="0 0 1400 940">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="none" stroke="#36546e" stroke-width="1.5"/></marker></defs>
+<rect width="1400" height="940" fill="#f5f7fb"/>
+<style>text{font-family:DejaVu Sans,sans-serif;fill:#163047} .title{font-size:32px;font-weight:bold}.head{font-size:22px;font-weight:bold}.body{font-size:18px}.small{font-size:16px}.line{fill:none;stroke:#36546e;stroke-width:2.5;marker-end:url(#arrow)}</style>
+<text x="50" y="58" class="title" text-anchor="start">ESP32 Open Intercom</text>
+<text x="50" y="91" class="body" text-anchor="start">Aktueller Aufbau · lokale Android-Innenstationen · Stand 28.10.2026</text>
+<rect x="40" y="125" width="750" height="640" rx="15" fill="#eaf2fb" stroke="#a9bdcf" stroke-width="2"/>
+<text x="65" y="162" class="head" text-anchor="start">TÜRSTATION · beide Boards im selben Gehäuse</text>
+<rect x="65" y="185" width="310" height="180" rx="15" fill="white" stroke="#a9bdcf" stroke-width="2"/>
+<text x="85" y="220" class="head" text-anchor="start">XIAO ESP32-S3 Sense</text>
+<text x="85" y="255" class="body" text-anchor="start">Kamera → JPEG</text>
+<text x="85" y="284" class="body" text-anchor="start">Onboard-Mikrofon → PCM16</text>
+<text x="85" y="313" class="body" text-anchor="start">Audioaufnahme + Puffer</text>
+<text x="85" y="342" class="body" text-anchor="start">Audio hat Vorrang vor Video</text>
+<rect x="415" y="185" width="345" height="240" rx="15" fill="white" stroke="#a9bdcf" stroke-width="2"/>
+<text x="435" y="220" class="head" text-anchor="start">Waveshare ESP32-S3</text>
+<text x="435" y="255" class="body" text-anchor="start">Rufzustand und Zuordnung</text>
+<text x="435" y="284" class="body" text-anchor="start">Kamera-/Audiopuffer</text>
+<text x="435" y="313" class="body" text-anchor="start">WLAN zu den Innenstationen</text>
+<text x="435" y="342" class="body" text-anchor="start">Diagnose · Einrichtung · OTA</text>
+<path class="line" d="M375 285H415"/>
+<text x="85" y="395" class="small" text-anchor="start">UART · Bild + Ton · 1 Mbit/s</text>
+<rect x="65" y="460" width="310" height="105" rx="15" fill="white" stroke="#a9bdcf" stroke-width="2"/>
+<text x="85" y="495" class="head" text-anchor="start">3 Klingeltaster</text>
+<text x="85" y="532" class="body" text-anchor="start">P1 / P2 / P3 → Waveshare</text>
+<path class="line" d="M375 510H395V410H415"/>
+<rect x="415" y="470" width="345" height="120" rx="15" fill="white" stroke="#a9bdcf" stroke-width="2"/>
+<text x="435" y="505" class="head" text-anchor="start">Audioausgabe</text>
+<text x="435" y="538" class="body" text-anchor="start">MAX98357A → Lautsprecher</text>
+<text x="435" y="567" class="body" text-anchor="start">Sprache kommt vom Tablet</text>
+<path class="line" d="M590 425V470"/>
+<text x="608" y="452" class="small" text-anchor="start">I²S</text>
+<rect x="65" y="630" width="695" height="100" rx="15" fill="#dcece4" stroke="#a9bdcf" stroke-width="2"/>
+<text x="85" y="664" class="head" text-anchor="start">Gemeinsame Steuerplatine · Versorgung 5 V / GND</text>
+<text x="85" y="700" class="body" text-anchor="start">Versorgt XIAO und Waveshare; verbindet Taster und Audio.</text>
+<rect x="880" y="125" width="475" height="420" rx="15" fill="#fff4e2" stroke="#d4b482" stroke-width="2"/>
+<text x="905" y="162" class="head" text-anchor="start">ANDROID-TABLETS · Fully-Kiosk</text>
+<rect x="905" y="185" width="425" height="85" rx="15" fill="white" stroke="#dcc8a3" stroke-width="2"/>
+<text x="925" y="217" class="head" text-anchor="start">P1 · Erdgeschoss</text>
+<text x="925" y="248" class="small" text-anchor="start">Klingelton · Bild · Sprechen halten · Ende</text>
+<rect x="905" y="290" width="425" height="85" rx="15" fill="white" stroke="#dcc8a3" stroke-width="2"/>
+<text x="925" y="322" class="head" text-anchor="start">P2 · 1. Stock</text>
+<text x="925" y="353" class="small" text-anchor="start">Klingelton · Bild · Sprechen halten · Ende</text>
+<rect x="905" y="395" width="425" height="85" rx="15" fill="white" stroke="#dcc8a3" stroke-width="2"/>
+<text x="925" y="427" class="head" text-anchor="start">P3 · Keller</text>
+<text x="925" y="458" class="small" text-anchor="start">Klingelton · Bild · Sprechen halten · Ende</text>
+<rect x="880" y="590" width="475" height="115" rx="15" fill="#efeafb" stroke="#b5a2d3" stroke-width="2"/>
+<text x="905" y="626" class="head" text-anchor="start">OPTIONAL · Handy-App für P1</text>
+<text x="905" y="657" class="small" text-anchor="start">Nur im gemeinsamen WLAN · Testversion</text>
+<text x="905" y="682" class="small" text-anchor="start">Sprechtasten-Test noch offen</text>
+<path d="M790 275H830V650H880" class="line"/>
+<path d="M830 275H880" class="line"/>
+<text x="805" y="222" class="small" text-anchor="start">WLAN</text>
+<text x="805" y="245" class="small" text-anchor="start">Router / AP</text>
+<rect x="40" y="800" width="1315" height="110" rx="15" fill="white" stroke="#a9bdcf" stroke-width="2"/>
+<text x="65" y="834" class="head" text-anchor="start">Datenwege</text>
+<text x="65" y="866" class="body" text-anchor="start">Hinweg: Kamera + Mikrofon → UART → Waveshare → WLAN → zugeordnetes Tablet</text>
+<text x="65" y="894" class="body" text-anchor="start">Rückweg: Tablet-Mikrofon (nur beim Halten) → WLAN → Waveshare → I²S-Verstärker → Lautsprecher</text>
+<text x="880" y="749" class="small" text-anchor="start">EG: PIN-Menü für WLAN und RSSI.</text>
+<text x="880" y="776" class="small" text-anchor="start">P2/P3: Einstellungszugang ausgeblendet.</text>
+</svg>

@@ -1,0 +1,39 @@
+# Secrets
+**/secrets.h
+**/secrets*.h
+
+# Arduino build artefacts
+**/build/
+**/*.bin
+**/*.elf
+**/*.map
+**/*.hex
+
+# macOS / Windows / Linux junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# VSCode/PlatformIO
+.vscode/
+.pio/
+
+# Optional: do NOT commit big vendor libs if you prefer
+# firmware/**/libraries/
+# Local snapshots, editor state and credentials
+**/.idea/
+**/.gradle/
+**/local.properties
+**/*.apk
+**/*.keystore
+**/*.jks
+/backups/
+/android-*.tar.gz
+/ANDROID_BACKUP_*.txt
+**/*.bak
+**/*-backup
+**/*-backups/
+**/*.kicad_prl
+**/fp-info-cache
